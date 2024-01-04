@@ -1,0 +1,152 @@
+ body{
+  width: auto;
+} 
+/* Below code is the remove left & right scrolling arroy to the trending tab  */
+.slick-prev,
+.slick-next {
+  display: none !important; /* Hide the arrows */
+}
+/* Below code is for search cursor */
+  .custom-cursor-color {
+    caret-color: #FC4747; /* Change the color of the cursor */
+  }
+/* Below code is for Trending Image and tages */
+  .Trend{
+    width: 400px;
+    height: 180px;
+    position: relative;
+}
+.Trend img{
+  width: 400px;
+  height: 100%;
+  border-radius: 12px;
+  }
+  .TinfoB{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  }
+.Tinfo{
+  margin: 1rem;
+  position: absolute;
+  top:0;    
+  right:0;    
+ background-color: rgba(0, 0, 0, 0.5);/* Added a background color for better visibility*/
+ border-radius: 100%;
+}
+/* Below code is for Recommended Videos */
+.custom-cursor-color {
+  caret-color: #FC4747; 
+}
+/* Below code is for Trending Image and tages */
+.Recommen{
+  width: auto;
+  height: 280px;
+  position: relative;
+}
+.Recommen img{
+  width: 350px;
+  height: 230px;
+border-radius: 12px;
+}
+.rinfo{
+  margin: 1rem;
+position: absolute;
+top:0;    
+right:0;    
+background-color: rgba(0, 0, 0, 0.5);
+border-radius: 100%;
+color: white; 
+}
+/* ///////// below code are for year and logo code on the card /////////// */
+.card {
+  display: flex;
+  align-items: center;
+}
+.year-logo {
+  display: flex; 
+  align-items: center;
+  margin-right: 10px; 
+}
+.year-logo span {
+  margin-right: 0.5rem; 
+}
+/* ////////////////// Image movie icon color   */
+.white-icon path {
+  fill: white; 
+}
+/* /////////Below code is for recommendation  ///////// */
+.card {
+  display: flex;
+  flex-direction: column;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.tags {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 639px) {
+  .Trend{
+    width: 100%;
+    position: relative;
+}
+.Trend img{
+  width: 35rem;
+  } 
+  .TinfoB{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  }
+  .Recommen{
+    width: 100%;
+    height: 280px;
+    position: relative; 
+  }
+  .Recommen img{
+    width:38rem;
+  border-radius: 12px;
+  }
+}
+/* Below is the image hover icon code  */
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+.play-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.image-container:hover .play-overlay {
+  display: flex;
+}
+/* Titles styling  */
+h1.custom-heading {
+  font-size: 2rem; 
+  font-weight: bold; 
+  color: #ffffff; 
+  margin-bottom: 0.25rem; 
+  position: relative; 
+}
+.custom-heading span {
+  background-image: linear-gradient(to right, #f6e05e, #ef4444, #ec4899);  
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; 
+}
+
+
+
